@@ -15,4 +15,19 @@ public interface AdvanceSetInterface <T> extends CollectionInterface<T> {
     difference()
  */
 
+    /**
+     * Returns a new set representing the union of this set and the other set.
+     */
+    AdvanceSetInterface<T> union(AdvanceSetInterface<T> other);
+
+    /**
+     * Returns a new set containing only elements found in both sets.
+     */
+    AdvanceSetInterface<T> intersection(AdvanceSetInterface<T> other);
+
+    /**
+     * Returns a new set containing elements in this set but not in the other.
+     */
+    AdvanceSetInterface<T> difference(AdvanceSetInterface<T> other);
+
 }
